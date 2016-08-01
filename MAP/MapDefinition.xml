@@ -1,0 +1,451 @@
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="4678 $">
+  <Object id="GoogleMapControl">
+    <Group>
+      <Name>General</Name>
+      <Type>Main</Type>
+      <Childs>
+        <Prop>
+          <Id>Title</Id>
+          <Name>Title</Name>
+          <Type>Text</Type>
+          <Default>Map Title</Default>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Width</Id>
+          <Name>Width</Name>
+          <Type>Text</Type>
+          <Default>500px</Default>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Height</Id>
+          <Name>Height</Name>
+          <Type>Text</Type>
+          <Default>350px</Default>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Provider</Id>
+          <Name>Provider</Name>
+          <Type>Combo</Type>
+          <Default>GOOGLE</Default>
+          <Metadata>
+            <Value name="FlagScope">DesignTime</Value>
+          </Metadata>
+          <Values>
+            <Value id="GOOGLE" desc="Google Maps" />
+            <Value id="YAHOO" desc="Yahoo Maps" />
+			<Value id="BAIDU" desc="Baidu Maps" />
+          </Values>
+        </Prop>
+        <Prop>
+          <Id>Type</Id>
+          <Name>Type</Name>
+          <Type>Combo</Type>
+          <Default>G_NORMAL_MAP</Default>
+          <Metadata />
+          <Values>
+            <Value id="G_NORMAL_MAP" desc="Map" />
+            <Value id="G_SATELLITE_MAP" desc="Satellital Photo" />
+            <Value id="G_HYBRID_MAP" desc="Hybrid" />
+            <Value id="G_TERRAIN_MAP" desc="Terrain" />
+          </Values>
+        </Prop>
+        <Prop>
+          <Id>City</Id>
+          <Name>City</Name>
+          <Type>Combo</Type>
+          <Default>-34.90,-56.11</Default>
+          <Metadata />
+          <Values>
+            <Value id="-34.90,-56.11" desc="Montevideo" />
+            <Value id="-25.31,-57.56" desc="Asuncion" />
+            <Value id="41.36,2.12" desc="Barcelona" />
+            <Value id="39.55,116.25" desc="Beijing" />
+            <Value id="4.35,-74.04" desc="Bogota" />
+            <Value id="-34.65,-58.40" desc="Buenos Aires" />
+            <Value id="10.48,-66.87" desc="Caracas" />
+            <Value id="41.85,-87.55" desc="Chicago" />
+            <Value id="-31.40,-64.15" desc="Cordoba - Arg" />
+            <Value id="14.58,-90.56" desc="Guatemala" />
+            <Value id="-2.20,-79.90" desc="Guayaquil" />
+            <Value id="23.15,-82.23" desc="La Habana" />
+            <Value id="-26.19,27.80" desc="Johannesburg" />
+            <Value id="-16.50,-68.15" desc="La Paz" />
+            <Value id="-12.0,-77.20" desc="Lima" />
+            <Value id="40.26,-3.42" desc="Madrid" />
+            <Value id="19.45,-99.12" desc="Mexico City" />
+            <Value id="48.86,2.38" desc="Paris" />
+            <Value id="8.58,-79.32" desc="Panama city" />
+            <Value id="-30.01,-51.13" desc="Porto Alegre" />
+			<Value id="18.533333,-72.333333" desc="Port-au-Prince" />
+            <Value id="-22.57,-43,12" desc="Rio de Janeiro" />
+            <Value id="41.92,12.53" desc="Roma" />
+            <Value id="-23.56,-46.64" desc="Sao Paulo" />
+            <Value id="9.59,-84.04" desc="San Jose " />
+			<Value id="13.69, -89.19" desc="San Salvador " />
+            <Value id="-33.52,-70.64" desc="Santiago de Chile" />
+			<Value id="31.2,121.5" desc="Shanghai" />
+            <Value id="14.04,-87.13" desc="Tegucigalpa" />
+            <Value id="35.69, 139.70" desc="Tokyo" />
+            <Value id="0,0" desc="Specific Coordenate" />
+          </Values>
+        </Prop>
+        <Prop>
+          <Id>Latitude</Id>
+          <Name>Latitude</Name>
+          <Type>Text</Type>
+          <Default />
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Longitude</Id>
+          <Name>Longitude</Name>
+          <Type>Text</Type>
+          <Default />
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Precision</Id>
+          <Name>Precision</Name>
+          <Type>Integer</Type>
+          <Default>8</Default>
+          <Metadata />
+        </Prop>
+        <Group>
+          <Name>Controls</Name>
+          <Childs>
+            <Prop>
+              <Id>GSmall</Id>
+              <Name>Small_Control</Name>
+              <Type>Combo</Type>
+              <Default>GSmall_True</Default>
+              <Metadata />
+              <Values>
+                <Value id="GSmall_True" desc="True" />
+                <Value id="GSmall_False" desc="False" />
+              </Values>
+            </Prop>
+            <Prop>
+              <Id>GType</Id>
+              <Name>Type_Control</Name>
+              <Type>Combo</Type>
+              <Default>GType_False</Default>
+              <Metadata />
+              <Values>
+                <Value id="GType_True" desc="True" />
+                <Value id="GType_False" desc="False" />
+              </Values>
+            </Prop>
+            <Prop>
+              <Id>Scale</Id>
+              <Name>Scale_Control</Name>
+              <Type>Combo</Type>
+              <Default>GScale_False</Default>
+              <Metadata />
+              <Values>
+                <Value id="GScale_True" desc="True" />
+                <Value id="GScale_False" desc="False" />
+              </Values>
+            </Prop>
+            <Group>
+              <Name>Google</Name>
+              <Childs>
+                <Prop>
+                  <Id>Overview</Id>
+                  <Name>OverView_Control</Name>
+                  <Type>Combo</Type>
+                  <Default>GOverviewMap_False</Default>
+                  <Metadata />
+                  <Values>
+                    <Value id="GOverviewMap_True" desc="True" />
+                    <Value id="GOverviewMap_False" desc="False" />
+                  </Values>
+                </Prop>
+                <Prop>
+                  <Id>SmallZoom</Id>
+                  <Name>Small_Zoom_Control</Name>
+                  <Type>Combo</Type>
+                  <Default>GSmallZoom_False</Default>
+                  <Metadata />
+                  <Values>
+                    <Value id="GSmallZoom_True" desc="True" />
+                    <Value id="GSmallZoom_False" desc="False" />
+                  </Values>
+                </Prop>
+                <Prop>
+                  <Id>Large</Id>
+                  <Name>Large_Control</Name>
+                  <Type>Combo</Type>
+                  <Default>GLarge_False</Default>
+                  <Metadata />
+                  <Values>
+                    <Value id="GLarge_True" desc="True" />
+                    <Value id="GLarge_False" desc="False" />
+                  </Values>
+                </Prop>
+                <Prop>
+                  <Id>MapType_Control_Style</Id>
+                  <Name>MapType_Control_Style</Name>
+                  <Type>Combo</Type>
+                  <Default>DEFAULT</Default>
+                  <Metadata />
+                  <Values>
+                    <Value id="DEFAULT" desc="Default" />
+                    <Value id="DROPDOWN_MENU" desc="DropDown Menu" />
+                    <Value id="HORIZONTAL_BAR" desc="Horizontal Bar" />
+                  </Values>
+                </Prop>
+                <Prop>
+                  <Id>Navigation_Control_Style</Id>
+                  <Name>Navigation_Control_Style</Name>
+                  <Type>Combo</Type>
+                  <Default>DEFAULT</Default>
+                  <Metadata />
+                  <Values>
+                    <Value id="DEFAULT" desc="Default" />
+                    <Value id="SMALL" desc="Small" />
+                    <Value id="ANDROID" desc="Android" />
+                    <Value id="ZOOM_PAN" desc="Zoom Pan" />
+                  </Values>
+                </Prop>
+                <Prop>
+                  <Id>ScrollWheel</Id>
+                  <Name>ScrollWheel</Name>
+                  <Type>Boolean</Type>
+                  <Default>True</Default>
+                  <Metadata />
+                </Prop>
+			   </Childs>
+             </Group>
+          </Childs>
+        </Group>
+        <Group>
+          <Name>DataBinding</Name>
+          <Childs>
+            <Prop>
+              <Id>GxMap</Id>
+              <Name>GxMap</Name>
+              <Type>Custom</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagDataTypeFilter">GxMap</Value>
+                <Value name="FlagSetValueMethod">SetData</Value>
+                <Value name="FlagGetValueMethod">GetData</Value>
+                <Value name="FlagScope">DesignTime</Value>
+                <Value name="FlagHideVariables">False</Value>
+                <Value name="FlagHideAttributes">True</Value>
+              </Metadata>
+            </Prop>
+            <Prop>
+              <Id>ClickLatitude</Id>
+              <Name>ClickLatitude</Name>
+              <Type>Custom</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagDataTypeFilter">Character</Value>
+                <Value name="FlagSetValueMethod">SetClickLatitude</Value>
+                <Value name="FlagGetValueMethod">GetClickLatitude</Value>
+                <Value name="FlagScope">DesignTime</Value>
+                <Value name="FlagHideVariables">False</Value>
+                <Value name="FlagHideAttributes">True</Value>
+              </Metadata>
+            </Prop>
+            <Prop>
+              <Id>ClickLongitude</Id>
+              <Name>ClickLongitude</Name>
+              <Type>Custom</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagDataTypeFilter">Character</Value>
+                <Value name="FlagSetValueMethod">SetClickLongitude</Value>
+                <Value name="FlagGetValueMethod">GetClickLongitude</Value>
+                <Value name="FlagScope">DesignTime</Value>
+                <Value name="FlagHideVariables">False</Value>
+                <Value name="FlagHideAttributes">True</Value>
+              </Metadata>
+            </Prop>
+            <Prop>
+              <Id>InformationControl</Id>
+              <Name>InformationControl</Name>
+              <Type>Text</Type>
+              <Default>ControlName</Default>
+              <Metadata />
+            </Prop>
+          </Childs>
+        </Group>
+        <Group>
+          <Name>Google Provider</Name>
+          <Childs>
+            <Prop>
+              <Id>Icon</Id>
+              <Name>Icon</Name>
+              <Type>Combo</Type>
+              <Default>Default</Default>
+              <Metadata />
+              <Values>
+                <Value id="Default" desc="Default" />
+                <Value id="Blue" desc="Blue" />
+                <Value id="Green" desc="Green" />
+                <Value id="Orange" desc="Orange" />
+                <Value id="Pink" desc="Pink" />
+                <Value id="Red" desc="Red" />
+                <Value id="BlueC" desc="BlueCircle" />
+                <Value id="GreenC" desc="GreenCircle" />
+                <Value id="YellowC" desc="YellowCircle" />
+              </Values>
+            </Prop>
+			<Prop>
+				<Id>IconWidth</Id>
+				<Name>IconWidth</Name>
+				<Type>Integer</Type>
+				<Default>20</Default>
+				<Metadata />
+			</Prop>
+			<Prop>
+				<Id>IconHeigth</Id>
+				<Name>IconHeigth</Name>
+				<Type>Integer</Type>
+				<Default>32</Default>
+				<Metadata />
+			</Prop>
+			<Prop>
+				<Id>AnchorLeft</Id>
+				<Name>AnchorLeft</Name>
+				<Type>Integer</Type>
+				<Default>10</Default>
+				<Metadata />
+			</Prop>
+			<Prop>
+				<Id>AnchorTop</Id>
+				<Name>AnchorTop</Name>
+				<Type>Integer</Type>
+				<Default>32</Default>
+				<Metadata />
+			</Prop>
+			<Prop>
+				<Id>GoogleApiKey</Id>
+				<Name>GoogleApiKey</Name>
+				<Type>Text</Type>
+				<Default />
+				<Metadata />
+			</Prop>
+			<Group>
+              <Name>KML</Name>
+              <Childs> 
+				<Prop>
+                  <Id>KML</Id>
+                  <Name>KML</Name>
+                  <Type>Boolean</Type>
+                  <Metadata />
+                  <Values>
+                    <Value id="true" desc="true" />
+                  </Values>
+                </Prop>
+				<Prop>
+                  <Id>KMLURL</Id>
+                  <Name>KMLURL</Name>
+                  <Type>Text</Type>
+				  <Default></Default>
+                  <Metadata/>
+				</Prop>
+	           </Childs>
+            </Group>
+            <Prop>
+              <Id>OpenLinksInNewWindow</Id>
+              <Name>OpenLinksInNewWindow</Name>
+              <Type>Combo</Type>
+              <Default>OpenNew_True</Default>
+              <Metadata />
+              <Values>
+                <Value id="OpenNew_True" desc="true" />
+                <Value id="OpenNew_False" desc="false" />
+              </Values>
+            </Prop>
+            <Group>
+              <Name>GetCoordenates</Name>
+              <Childs>               
+                <Prop>
+                  <Id>getIcon</Id>
+                  <Name>getIcon</Name>
+                  <Type>Combo</Type>
+                  <Default>Orange</Default>
+                  <Metadata />
+                  <Values>
+                    <Value id="Blue" desc="Blue" />
+                    <Value id="Green" desc="Green" />
+                    <Value id="Orange" desc="Orange" />
+                    <Value id="Pink" desc="Pink" />
+                    <Value id="Red" desc="Red" />
+                    <Value id="BlueC" desc="BlueCircle" />
+                    <Value id="GreenC" desc="GreenCircle" />
+                    <Value id="YellowC" desc="YellowCircle" />
+                  </Values>
+                </Prop>
+                <Prop>
+                  <Id>Onclick</Id>
+                  <Name>Onclick</Name>
+                  <Type>Combo</Type>
+                  <Default>add_Marker</Default>
+                  <Metadata>
+                    <Value name="FlagScope">DesignTime</Value>
+                  </Metadata>
+                  <Values>
+                    <Value id="none" desc="none" />                    
+                    <Value id="add_Marker" desc="Add Marker" />
+                    <Value id="getvalue" desc="Get Value" />                    
+                  </Values>
+                </Prop>
+                <Prop>
+                  <Id>CenterWhenClick</Id>
+                  <Name>CenterWhenClick</Name>
+                  <Type>Boolean</Type>
+                  <Default>True</Default>
+                  <Metadata />
+                </Prop>
+                <Prop>
+                  <Id>Clear_Overlay</Id>
+                  <Name>Clear_Overlay</Name>
+                  <Type>Boolean</Type>
+                  <Metadata />
+                  <Values>
+                    <Value id="true" desc="true" />
+                  </Values>
+                </Prop>
+              </Childs>
+            </Group>
+          </Childs>
+        </Group>
+		<Group>
+          <Name>Baidu Provider</Name>
+		  <Childs>
+		         <Prop>
+                  <Id>BaiduKey</Id>
+                  <Name>BaiduKey</Name>
+                  <Type>Text</Type>
+				  <Default>41e051de8c41e0a4532e367c6b0e12fc</Default>
+                  <Metadata/>
+                </Prop>
+				</Childs>
+		</Group>
+		<Group>
+          <Name>Routing</Name>
+          <Childs>
+            <Prop>
+              <Id>Travel_Mode</Id>
+              <Name>Travel_Mode</Name>
+              <Type>Combo</Type>
+              <Metadata />
+              <Values>
+                <Value id="1" desc="Driving" />
+                <Value id="2" desc="Walking" />
+              </Values>
+            </Prop>
+          </Childs>
+        </Group>
+
+      </Childs>
+    </Group>
+  </Object>
+</Content>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExportFile>
+  <KMW>
+    <MajorVersion>3</MajorVersion>
+    <MinorVersion>1</MinorVersion>
+  </KMW>
+  <Objects>
+    <Object parent="Objects" parentType="00000000-0000-0000-0000-000000000008" guid="9595bdbd-5d36-47a3-a65b-e5f3ec45be6b" name="GxMap" type="447527b5-9210-4523-898b-5dccb17be60a" description="Gx Map" lastUpdate="2007-07-15T04:24:48.0000000">
+      <Part type="5c2aa9da-8fc4-4b6b-ae02-8db4fa48976a">
+        <Level Name="GxMap">
+          <LevelInfo guid="1e3cadfb-9e09-48d4-92e9-fde294121381" name="GxMap" description="Gx Map">
+            <Properties><Property><Name>Name</Name><Value>GxMap</Value></Property></Properties>
+          </LevelInfo>
+          <Level Name="Points">
+            <LevelInfo guid="7c5cdd0c-cdbe-4084-be92-65098d2ebc62" name="Points" description="Points">
+              <Properties><Property><Name>Name</Name><Value>Points</Value></Property><Property><Name>AttCollection</Name><Value>True</Value></Property><Property><Name>idCollectionItemName</Name><Value>Point</Value></Property></Properties>
+            </LevelInfo>
+            <Item guid="fd934a2e-60b7-41c1-88de-7c74653b2bca" name="PointLat" description="Point Lat">
+              <Properties><Property><Name>Name</Name><Value>PointLat</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>40</Value></Property><Property><Name>AttMaxLen</Name><Value>40</Value></Property></Properties>
+            </Item>
+            <Item guid="98a5c73b-5a43-491e-9282-53d4e2ced72b" name="PointLong" description="Point Long">
+              <Properties><Property><Name>Name</Name><Value>PointLong</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>40</Value></Property><Property><Name>AttMaxLen</Name><Value>40</Value></Property></Properties>
+            </Item>
+            <Item guid="6fd04723-4a4a-4c84-a70f-18a2c78f345d" name="PointIcon" description="Point Icon">
+              <Properties><Property><Name>Name</Name><Value>PointIcon</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property></Properties>
+            </Item>
+            <Item guid="9aae6f65-a877-49b7-815a-bc404b67e384" name="PointStreet" description="Point Street">
+              <Properties><Property><Name>Name</Name><Value>PointStreet</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>100</Value></Property><Property><Name>AttMaxLen</Name><Value>100</Value></Property></Properties>
+            </Item>
+            <Item guid="92a42da4-9426-44ec-985f-3791c8cee439" name="PointStreetNumber" description="Point Street Number">
+              <Properties><Property><Name>Name</Name><Value>PointStreetNumber</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>6</Value></Property><Property><Name>AttMaxLen</Name><Value>6</Value></Property></Properties>
+            </Item>
+            <Item guid="6b4568b6-4f8b-4822-83ff-c6075636b245" name="PointCrossStreet" description="Point Cross Street">
+              <Properties><Property><Name>Name</Name><Value>PointCrossStreet</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>100</Value></Property><Property><Name>AttMaxLen</Name><Value>100</Value></Property></Properties>
+            </Item>
+            <Item guid="9df21a7a-eb04-4614-a8a1-8e7347eed597" name="PointInfowinTit" description="Point Infowin Tit">
+              <Properties><Property><Name>Name</Name><Value>PointInfowinTit</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>100</Value></Property><Property><Name>AttMaxLen</Name><Value>100</Value></Property></Properties>
+            </Item>
+            <Item guid="61d2b216-7bb6-4a8c-b6e7-135b3ca31a06" name="PointInfowinDesc" description="Point Infowin Desc">
+              <Properties><Property><Name>Name</Name><Value>PointInfowinDesc</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>200</Value></Property><Property><Name>AttMaxLen</Name><Value>200</Value></Property></Properties>
+            </Item>
+            <Item guid="9ed605e8-a07b-46a3-8b8b-54f96d32c085" name="PointInfowinLink" description="Point Infowin Link">
+              <Properties><Property><Name>Name</Name><Value>PointInfowinLink</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>200</Value></Property><Property><Name>AttMaxLen</Name><Value>200</Value></Property></Properties>
+            </Item>
+            <Item guid="9ed605e8-a07b-46a3-8b8b-54f96d32c085" name="PointInfowinImg" description="Point Infowin Image">
+              <Properties><Property><Name>Name</Name><Value>PointInfowinImg</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>Character</Value></Property><Property><Name>Length</Name><Value>200</Value></Property><Property><Name>AttMaxLen</Name><Value>200</Value></Property></Properties>
+            </Item>
+          </Level>
+        </Level>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+        <Properties />
+      </Part>
+      <Properties><Property><Name>Name</Name><Value>GxMap</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Object>
+   </Objects>
+  <Attributes />
+</ExportFile>
