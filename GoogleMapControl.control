@@ -16,8 +16,9 @@
   <Description>Map</Description>
   <Id>00000000-0000-0000-0000-000000000000</Id>
   <Name>GoogleMapControl</Name>
-<Platforms>
+   <Platforms>
 		<Platform>Web</Platform>
+		<Platform>WebLayout</Platform>
 	</Platforms>
   <ShowMethod>show</ShowMethod>
   <ReferencedFiles>
