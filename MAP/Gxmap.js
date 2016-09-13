@@ -9,6 +9,7 @@ var TYPE_SATELLITE                = 'G_SATELLITE_MAP';
 var TYPE_HYBRID                   = 'G_HYBRID_MAP';
 var TYPE_TERRAIN                  = 'G_TERRAIN_MAP';
 var gxmapinstance;
+var pepe = true;
 var YAHOO;
 var YMAPPID;
 
@@ -120,7 +121,7 @@ function gxMap()
 			switch(this.Provider)
 			{   
 			case 'GOOGLE':
-				GoogleShow(gxmapinstance);
+			    GoogleShow(gxmapinstance, true);
 				break;
 			case 'BAIDU':
 				BaiduShow(gxmapinstance);
@@ -138,7 +139,7 @@ function gxMap()
 		switch(this.Provider)
 		{   
 			case 'GOOGLE':
-				GoogleShow(gxmapinstance);
+	            GoogleShow(gxmapinstance, false);
 				break;
 			case 'BAIDU':
 				BaiduShow(gxmapinstance);

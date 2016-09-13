@@ -10,7 +10,7 @@ var tsp;
 /********************************************************************************/
 
 
-function GoogleShow(GoogleMapControl) {
+function GoogleShow(GoogleMapControl, espostback) {
 
     mapControl = GoogleMapControl;			
     //Map Options Config
@@ -130,6 +130,7 @@ function GoogleShow(GoogleMapControl) {
 
             ////////////////Config Marker Listeners
             //Associate Marker to infowin
+            if (!espostback) {
             google.maps.event.addListener(marker, 'click', function () {
                 if (this.htmlinfo != undefined) {
                     var infowindow = new google.maps.InfoWindow();
@@ -138,7 +139,7 @@ function GoogleShow(GoogleMapControl) {
                     infowindow.open(marker.map);
                 }
             });
-
+            }
             SetMarkerDragEndListeners(marker);
 
             if (mapControl.GoogleMap.Points[i].Deletable) {
@@ -253,12 +254,12 @@ function GoogleShow(GoogleMapControl) {
 
 	
 	//KML 
-	if (mapControl.KML=true){
+	if (mapControl.KML){
 		var ctaLayer = new google.maps.KmlLayer({
 		url: 'http://' + mapControl.KMLURL});
 		ctaLayer.setMap(map);	 
 	}
-	//if (!GoogleMapControl.IsPostBack)
+   if (!espostback)
 		initializeMapHandlers();
     
     //}
@@ -656,8 +657,8 @@ function BaiduShow(BaiduMapControl) {
 		var container = document.getElementById(mapControl.ContainerName);
 		var mapContainer = document.createElement("div");
 		mapContainer.setAttribute("id", mapControl.ContainerName + "_MAP");
-		mapContainer.style.width = mapControl.Width + "px"
-		mapContainer.style.height = mapControl.Height + "px";
+		mapContainer.style.width = mapControl.Width + "px"; //gx.dom.addUnits(mapControl.Width);
+		mapContainer.style.height = mapControl.Height + "px"; //gx.dom.addUnits(mapControl.Height);
 		container.appendChild(mapContainer);
 		map = new BMap.Map(mapContainer);		 
 		mapControl.Ready = true;

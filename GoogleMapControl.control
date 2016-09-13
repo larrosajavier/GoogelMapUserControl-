@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>8.2.2</Version>
+  <Version>8.2.4</Version>
   <IncludeInControlInfo>false</IncludeInControlInfo>
   <SupportFiles>
     <File>MAP\mapsproviders.js</File>
@@ -24,6 +24,7 @@
   <ReferencedFiles>
     <File>MAP\mapsproviders.js</File>
     <File>MAP\BpTspSolver.js</File>
+    <File>http://www.google.com/jsapi?key=[!AccessKey!]</File>
     <File>MAP\tspImp.js</File>
   </ReferencedFiles>
   <Constructor>
