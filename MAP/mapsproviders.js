@@ -1,5 +1,6 @@
 var markers = [];
 var polygons = [];
+var lines = [];
 var lastMarker = 0;
 var map;
 var mapControl;
@@ -171,7 +172,7 @@ function GoogleShow(GoogleMapControl, espostback) {
 			
 			var polyline = new google.maps.Polyline({path:polygonLinePath , strokeColor:color, strokeWeight:weight, strokeOpacity:opacity,map: map}    );    
 			polyline.setMap(map);
-			//polygons.push(polyline);
+			lines.push(polyline);
 		}
 	}
 	
@@ -389,6 +390,11 @@ function clearAllMarkers(){
 		this.polygons[i].setMap(null);		
 	}
 	this.polygons = [];
+	for (var i = 0; i< lines.length; i++)
+	{		
+		this.lines[i].setMap(null);		
+	}
+	this.lines = [];
 }
 function SetMarkerDobleClickListener(marker) {
     //Delete when dobleclick

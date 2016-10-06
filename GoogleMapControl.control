@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>8.2.4</Version>
+  <Version>8.2.5</Version>
   <IncludeInControlInfo>false</IncludeInControlInfo>
   <SupportFiles>
     <File>MAP\mapsproviders.js</File>
